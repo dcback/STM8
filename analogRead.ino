@@ -8,7 +8,7 @@
 
 #include <Serial.h>
 
-#define ledPin    5   // PB5
+#define ledPin    3   // PB5
 
 bool ledStatus = LOW;
 
