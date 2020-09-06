@@ -45,5 +45,5 @@ Full documentation is offered as well as a wide choice of development tools.
 - Unique ID
   - 96-bit unique key for each device
   
-  # Sduino schematic
+# Sduino schematic
   https://j.lnwfile.com/_/j/_raw/rw/td/8t.jpg
