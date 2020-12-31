@@ -1,4 +1,5 @@
 # Sduino 환경설정
+ST-LINK V2로 Upload to TargetBoard
 Start the Arduino-IDE. In File->Preferences, Settings tab, enter
 https://raw.githubusercontent.com/tenbaht/sduino/master/package_sduino_stm8_index.json
 
