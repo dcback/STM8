@@ -1,3 +1,14 @@
+# Sduino 환경설정
+Start the Arduino-IDE. In File->Preferences, Settings tab, enter
+https://raw.githubusercontent.com/tenbaht/sduino/master/package_sduino_stm8_index.json
+
+as an Additional Boards Manager URL.
+
+Open Tools->Board:...->Boards Manager
+Find Sduino by typing 'sd' into the search line
+Click on the list entry
+Click on Install.
+
 # STM8
 The STM8S103F2/x3 access line 8-bit microcontrollers offers 8 Kbyte Flash program memory, plus integrated true data EEPROM. The STM8S microcontroller family reference manual (RM0016) refers to devices in this family as low-density. They provide the following benefits: performance, robustness, and reduced system cost.
 Device performance and robustness are ensured by advanced core and peripherals made in a state-of-the art technology, a 16 MHz clock frequency, robust I/Os, independent watchdogs with separate clock source, and a clock security system.
