@@ -1,9 +1,17 @@
-/*
-  https://github.com/dcback/STM8/blob/master/stm8_pinout.png
-  https://github.com/tenbaht/sduino/tree/development/sduino/stm8/libraries/Generic_Examples/examples
-  [STM8 Pinout]
-  PA1=0 PA2=1 PA3=2 PB5=3 PB4=4  PC3=5 PC4=6=A0 PC5=7 PC6=8 PC7=9 PD1=10 PD2=11=A1 PD3=12=A2 PD4=13 PD5=14=A3=TX PD6=15=A4=RX
-  No #include <Serial.h> run ok, 5=PD5=TX, 6=PD6=RX
+/* https://github.com/tenbaht/sduino
+                [STM8 Pinout]
+                  ----------
+       SDA=PB5=3-|   STM8   |-2=PA3=SS
+       SCL=PB4=4-|  Sduino  |-3.3V
+        PC3=5(~)-|          |-5V
+     A0=PC4=6(~)-|          |-GND
+    SCK=PC5=7(~)-|          |-1=PA2 
+  MOSI=PC6=x8(~)-|          |-0=PA1
+   MISO=PC7=9(~)-|          |-RESET 
+     SWIM=PD1=10-|          |-15=PD6=A4=RX
+       A1=PD2=11-|    --    |-14=PD5=A3=TX 
+       A2=PD3=12-|   |  |   |-13=PD4
+                  ----------
 */
 void setup() {
   Serial_begin(9600);

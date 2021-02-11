@@ -1,16 +1,16 @@
 /* https://github.com/tenbaht/sduino/tree/development/sduino/stm8/libraries/EEPROM
-                 [STM8 Pinout]
+                [STM8 Pinout]
                   ----------
-          PD4=13-|   STM8   |-12=PD3=A2
-    TX=A3=PD5=14-|  Sduino  |-11=PD2=A1
-    RX=A4=PD6=15-|          |-10=PD1=SWIM
-           RESET-|          |-9(~)=PC7=MISO
-           PA1=0-|          |-8(~)=PC6=MOSI
-           PA2=1-|          |-7(~)=PC5=SCK
-             GND-|          |-6(~)=PC4=A0
-              5V-|          |-5(~)=PC3
-            3.3V-|          |-4=PB4=SCL
-        SS=PA3=2-|          |-3=PB5=SDA
+       SDA=PB5=3-|   STM8   |-2=PA3=SS
+       SCL=PB4=4-|  Sduino  |-3.3V
+        PC3=5(~)-|          |-5V
+     A0=PC4=6(~)-|          |-GND
+    SCK=PC5=7(~)-|          |-1=PA2 
+  MOSI=PC6=x8(~)-|          |-0=PA1
+   MISO=PC7=9(~)-|          |-RESET 
+     SWIM=PD1=10-|          |-15=PD6=A4=RX
+       A1=PD2=11-|    --    |-14=PD5=A3=TX 
+       A2=PD3=12-|   |  |   |-13=PD4
                   ----------
 
     Iterate through each byte of the EEPROM storage.
